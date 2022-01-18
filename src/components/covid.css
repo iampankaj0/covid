@@ -1,0 +1,110 @@
+h1{
+    color: #fff;
+    background-color: #000;
+    text-transform: capitalize;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px 0
+}
+
+.blink-soft {
+    animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+
+
+.card-blink{
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+
+
+
+
+h1 span>a{
+    color: rgb(250, 191, 114); 
+}
+
+h1 span>a:hover{
+    color: rgb(255, 234, 206);
+    text-decoration: none;
+    transition: .5s;
+}
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.row .col-md-4:nth-child(4),
+.row .col-md-4:nth-child(5),
+.row .col-md-4:nth-child(6){
+    margin-top: 20px;
+}
+
+.row .card{
+    height: 100%!important;
+}
+
+.row .col-md-4:first-child .card{
+    background-color: rgb(255, 217, 0);
+    border: none
+}
+.row .col-md-4:nth-child(2) .card{
+    background-color: rgb(81, 202, 0);
+    border: none
+}
+.row .col-md-4:nth-child(3) .card{
+    background-color: rgb(0, 170, 113);
+    border: none
+}
+.row .col-md-4:nth-child(4) .card{
+    background-color: rgb(0, 111, 155);
+    border: none
+}
+.row .col-md-4:nth-child(5) .card{
+    background-color: rgb(182, 0, 173);
+    border: none
+}
+.row .col-md-4:nth-child(6) .card{
+    background-color: rgb(187, 0, 40);
+    border: none
+}
+
+.card-body h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+.card-body h3>span{
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: lowercase;
+}
+
+.card-body p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 2px 4px 3px #000;
+}
+
+
+@media screen and (max-width: 767px) {
+    .row .col-md-4:nth-child(2),
+    .row .col-md-4:nth-child(3){
+        margin-top: 20px;
+    }
+}
